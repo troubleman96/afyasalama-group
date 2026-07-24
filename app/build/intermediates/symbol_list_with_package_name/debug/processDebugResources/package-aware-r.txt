@@ -3176,6 +3176,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_add_250
+id btn_add_500
 id btn_get_started
 id btn_login
 id btn_pick_time
@@ -3186,6 +3188,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id card_water
 id carryVelocity
 id center
 id centerCrop
@@ -3435,6 +3438,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pb_water
 id peekHeight
 id percent
 id pin
@@ -3565,6 +3569,10 @@ id transition_transform
 id triangle
 id tv_alarm_dosage
 id tv_alarm_med_name
+id tv_current_ml
+id tv_dashboard_water
+id tv_goal_ml
+id tv_info
 id tv_med_dosage
 id tv_med_name
 id tv_med_time
@@ -3715,6 +3723,7 @@ layout activity_alarm
 layout activity_dashboard
 layout activity_login
 layout activity_register
+layout activity_water_intake
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item

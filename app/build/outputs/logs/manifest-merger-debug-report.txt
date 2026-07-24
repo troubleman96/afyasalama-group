@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-57:12
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-63:12
 MERGED from [com.google.android.material:material:1.11.0] /home/cameltech/.gradle/caches/transforms-4/f24bb388571a863fe3c52d0fa21a2cf6/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cameltech/.gradle/caches/transforms-4/2f17bec8238adc1bf46aa2bddb1c1bf7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/cameltech/.gradle/caches/transforms-4/49f2ae8d315730dcf0833adde653a5bd/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -73,9 +73,17 @@ uses-permission#android.permission.WAKE_LOCK
 ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:8:5-68
 	android:name
 		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:8:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACTIVITY_RECOGNITION
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:10:22-76
 application
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:10:5-55:19
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:10:5-55:19
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:12:5-61:19
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:12:5-61:19
 MERGED from [com.google.android.material:material:1.11.0] /home/cameltech/.gradle/caches/transforms-4/f24bb388571a863fe3c52d0fa21a2cf6/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /home/cameltech/.gradle/caches/transforms-4/f24bb388571a863fe3c52d0fa21a2cf6/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cameltech/.gradle/caches/transforms-4/2f17bec8238adc1bf46aa2bddb1c1bf7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -97,77 +105,83 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/cameltech/.gradle/cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /home/cameltech/.gradle/caches/transforms-4/b06a0754b3702ea81ce4d3a9c88f93e5/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:14:9-61
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:16:9-61
 	android:icon
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:12:9-56
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:14:9-56
 	android:allowBackup
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:16:9-48
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:18:9-48
 activity#com.afyasalama.WelcomeActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:18:9-25:20
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:20:9-27:20
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:20:13-36
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:19:13-44
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:21:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:21:13-24:29
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:13-26:29
 action#android.intent.action.MAIN
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:27-74
 activity#com.afyasalama.LoginActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:27:9-29:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:29:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:28:13-42
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:30:13-42
 activity#com.afyasalama.RegisterActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:31:9-33:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:33:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:32:13-45
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:34:13-45
 activity#com.afyasalama.DashboardActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:35:9-37:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:37:9-39:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:37:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:36:13-46
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:38:13-46
 activity#com.afyasalama.AddMedicationActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:39:9-41:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:40:13-50
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:42:13-50
+activity#com.afyasalama.WaterIntakeActivity
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:46:13-48
 activity#com.afyasalama.AlarmActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:43:9-48:43
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:49:9-54:43
 	android:turnScreenOn
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:47:13-40
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:53:13-40
 	android:showWhenLocked
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:46:13-42
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:52:13-42
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:45:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:51:13-37
 	android:keepScreenOn
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:48:13-40
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:54:13-40
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:44:13-42
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:50:13-42
 receiver#com.afyasalama.receivers.AlarmReceiver
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:50:9-53:39
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:56:9-59:39
 	android:enabled
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:52:13-35
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:58:13-35
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:53:13-36
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:59:13-36
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:51:13-52
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:57:13-52
 uses-sdk
 INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml

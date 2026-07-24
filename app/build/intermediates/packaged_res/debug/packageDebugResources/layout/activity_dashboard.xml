@@ -19,6 +19,62 @@
             android:textColor="@color/black"
             android:layout_margin="16dp" />
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    app:tint="@color/primary_blue"
+                    android:contentDescription="Water Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Water Intake"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_dashboard_water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Progress: 0ml / 2000ml"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_media_play"
+                    app:tint="@color/gray_text"
+                    android:contentDescription="Go to Water Tracking" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_medications"
             android:layout_width="match_parent"
