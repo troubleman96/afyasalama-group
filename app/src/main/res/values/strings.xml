@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Afya Salama</string>
+    <string name="welcome_title">AFYA SALAMA</string>
+    <string name="welcome_subtitle">\" Medication reminders and a perfect way to stay hydrated \"</string>
+    <string name="get_started">Get started</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_button">Login</string>
+    <string name="new_to_app">New to Afya salama?</string>
+    <string name="create_account">create an account</string>
+    <string name="register_title">Create Account</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="agree_terms">I agree to the Privacy policy and Terms of services</string>
+    <string name="register_button">Register</string>
+    <string name="have_account">Have an account? Login</string>
+</resources>

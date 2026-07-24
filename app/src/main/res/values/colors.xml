@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#00478F</color> <!-- Figma Dark Blue -->
+    <color name="sky_blue">#AEE6FF</color>    <!-- Figma Welcome Top -->
+    <color name="light_grey">#F1F1F1</color>  <!-- Figma Input Background -->
+    <color name="gray_text">#757575</color>
+
+    <!-- Backward compatibility for existing layouts -->
+    <color name="edit_text_bg">@color/light_grey</color>
+    <color name="light_bg">@color/sky_blue</color>
+</resources>

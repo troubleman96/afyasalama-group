@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_alarm.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_alarm.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_item_medication.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/item_medication.xml"
+    },
+    {
+        "merged": "com.afyasalama.app-debug-31:/layout_activity_add_medication.xml.flat",
+        "source": "com.afyasalama.app-main-33:/layout/activity_add_medication.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_register.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_login.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/drawable_button_bg.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/drawable/button_bg.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/drawable_capsule_edit_text.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/drawable/capsule_edit_text.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_dashboard.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/drawable_capsule_button_blue.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/drawable/capsule_button_blue.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_add_medication.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_add_medication.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_welcome.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/drawable_circle_placeholder.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/drawable/circle_placeholder.xml"
+    }
+]

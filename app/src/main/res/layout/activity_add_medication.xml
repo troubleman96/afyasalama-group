@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Medication"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_med_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Medication Name"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/capsule_edit_text"
+        android:paddingHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/et_dosage"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Dosage (e.g. 1 pill)"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/capsule_edit_text"
+        android:paddingHorizontal="20dp" />
+
+    <Button
+        android:id="@+id/btn_pick_time"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Pick Reminder Time"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_selected_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time not set"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary_blue" />
+
+    <Button
+        android:id="@+id/btn_save_med"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Save Medication"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/capsule_button_blue"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        style="@style/Widget.Material3.Button" />
+
+</LinearLayout>
