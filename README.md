@@ -6,8 +6,8 @@ Afya Salama is a smart mobile application designed to help users manage their me
 - **Medication Reminders**: Add medication names, dosages, and exact reminder times.
 - **Interactive Alarm**: Uses the phone's **accelerometer sensor**. Users must shake the phone to stop the alarm, ensuring they are fully awake.
 - **Modern UI**: Clean, Figma-inspired design with capsule-shaped inputs and blue accents.
-- **Water Intake Tracking**: (Planned) Dynamic goals based on weather and activity.
-- **Health Log**: Track water consumption and medication history.
+- **Water Intake Tracking**: Dynamic goals that adjust based on **weather temperature** and **user activity (steps)**.
+- **Health Log**: Track water consumption and medication history in real-time.
 
 ## 🛠 Tech Stack
 - **Language**: Java
@@ -31,6 +31,13 @@ To ensure reminders work correctly, the app utilizes the following:
 1.  **Scheduling**: When a medication is saved, `AlarmHelper` calculates the next occurrence and schedules it using `AlarmManager.setExactAndAllowWhileIdle`.
 2.  **Triggering**: The `AlarmReceiver` catches the alarm intent, creates a high-priority notification channel, and launches the `AlarmActivity`.
 3.  **Interaction**: `AlarmActivity` plays the default alarm sound and vibrates. The user must **shake the device** (detected via `ShakeDetector`) to dismiss the alarm and mark the medication as taken.
+
+## 💧 Dynamic Water Intake
+The app helps you stay hydrated by calculating a personalized water goal that changes throughout the day.
+- **Activity Tracking**: Uses the phone's **Step Counter** sensor to increase your water goal as you move.
+- **Weather Awareness**: Adjusts hydration targets based on outside temperature.
+- **Detailed Tracking**: Log your intake and view progress via a circular progress visualization.
+- **Documentation**: For full technical details, see the [Water Tracking Guide](file:///home/cameltech/Desktop/afya_salama/app/app/WATER_TRACKING.md).
 
 ## 🎨 UI Design
 The interface has been meticulously reconstructed to match the Figma designs provided in the `Afya salama - designs/` folder.
