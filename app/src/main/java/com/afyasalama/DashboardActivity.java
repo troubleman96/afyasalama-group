@@ -35,6 +35,11 @@ public class DashboardActivity extends AppCompatActivity {
             startActivity(new Intent(DashboardActivity.this, WaterIntakeActivity.class));
         });
 
+        MaterialCardView cardDrugSearch = findViewById(R.id.card_drug_search);
+        cardDrugSearch.setOnClickListener(v -> {
+            startActivity(new Intent(DashboardActivity.this, DrugSearchActivity.class));
+        });
+
         FloatingActionButton fabAdd = findViewById(R.id.fab_add_med);
         fabAdd.setOnClickListener(new View.OnClickListener() {
             @Override
