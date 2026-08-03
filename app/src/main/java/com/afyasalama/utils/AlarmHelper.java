@@ -16,13 +16,6 @@ public class AlarmHelper {
     public static void setAlarm(Context context, Medication med) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            if (!alarmManager.canScheduleExactAlarms()) {
-                Log.e(TAG, "Cannot schedule exact alarms. Permission missing.");
-                // Note: WelcomeActivity should handle this, but logging here helps debug.
-            }
-        }
-
         Intent intent = new Intent(context, AlarmReceiver.class);
         intent.putExtra("med_name", med.getName());
         intent.putExtra("dosage", med.getDosage());
@@ -47,7 +40,6 @@ public class AlarmHelper {
             try {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !alarmManager.canScheduleExactAlarms()) {
                     Log.e(TAG, "Cannot schedule exact alarms. Permission missing.");
-                    // Fallback to non-exact if possible or just log
                     alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
                 } else {
                     alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
@@ -55,9 +47,18 @@ public class AlarmHelper {
                 Log.d(TAG, "Alarm set for: " + calendar.getTime().toString() + " (Med: " + med.getName() + ")");
             } catch (SecurityException e) {
                 Log.e(TAG, "SecurityException: " + e.getMessage());
-                // Fallback for devices where canScheduleExactAlarms() might still throw or is restricted
                 alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
             }
+        }
+    }
+
+    public static void cancelAlarm(Context context, int medId) {
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(context, AlarmReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, medId, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        if (alarmManager != null) {
+            alarmManager.cancel(pendingIntent);
+            Log.d(TAG, "Alarm cancelled for Med ID: " + medId);
         }
     }
 }

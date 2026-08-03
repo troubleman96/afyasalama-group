@@ -4,10 +4,6 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/drawable/circle_placeholder.xml"
     },
     {
-        "merged": "com.afyasalama.app-debug-33:/drawable_capsule_button_grey.xml.flat",
-        "source": "com.afyasalama.app-main-35:/drawable/capsule_button_grey.xml"
-    },
-    {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_activity_alarm.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/activity_alarm.xml"
     },
@@ -28,6 +24,10 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/item_drug.xml"
     },
     {
+        "merged": "com.afyasalama.app-debug-33:/layout_activity_add_medication.xml.flat",
+        "source": "com.afyasalama.app-main-35:/layout/activity_add_medication.xml"
+    },
+    {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_activity_drug_details.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/activity_drug_details.xml"
     },
@@ -44,8 +44,8 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/activity_add_medication.xml"
     },
     {
-        "merged": "com.afyasalama.app-debug-33:/layout_activity_welcome.xml.flat",
-        "source": "com.afyasalama.app-main-35:/layout/activity_welcome.xml"
+        "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/drawable_capsule_button_grey.xml.flat",
+        "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/drawable/capsule_button_grey.xml"
     },
     {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_fragment_water.xml.flat",
@@ -70,6 +70,14 @@
     {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_fragment_home.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.afyasalama.app-debug-33:/menu_medication_item_menu.xml.flat",
+        "source": "com.afyasalama.app-main-35:/menu/medication_item_menu.xml"
+    },
+    {
+        "merged": "com.afyasalama.app-debug-33:/layout_item_medication.xml.flat",
+        "source": "com.afyasalama.app-main-35:/layout/item_medication.xml"
     },
     {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_fragment_search.xml.flat",

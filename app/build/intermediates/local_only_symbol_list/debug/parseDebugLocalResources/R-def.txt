@@ -14,11 +14,14 @@ drawable capsule_button_grey
 drawable capsule_edit_text
 drawable circle_placeholder
 drawable ic_launcher_foreground
+id action_delete
+id action_edit
 id bottom_navigation
 id btn_add_250
 id btn_add_500
 id btn_get_started
 id btn_login
+id btn_overflow
 id btn_pick_time
 id btn_register
 id btn_save_med
@@ -40,6 +43,7 @@ id pb_water
 id rv_drugs
 id rv_medications
 id top_background
+id tv_add_med_title
 id tv_alarm_dosage
 id tv_alarm_med_name
 id tv_current_ml
@@ -73,6 +77,7 @@ layout fragment_water
 layout item_drug
 layout item_medication
 menu bottom_nav_menu
+menu medication_item_menu
 string agree_terms
 string app_name
 string confirm_password_hint

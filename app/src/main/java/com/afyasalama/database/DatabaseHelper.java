@@ -104,6 +104,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    public void updateMedication(Medication medication) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_NAME, medication.getName());
+        values.put(COLUMN_DOSAGE, medication.getDosage());
+        values.put(COLUMN_TIME, medication.getTime());
+        db.update(TABLE_MEDICATIONS, values, COLUMN_ID + " = ?", new String[]{String.valueOf(medication.getId())});
+        db.close();
+    }
+
     // --- Water Methods ---
 
     public void addWaterIntake(int amount) {

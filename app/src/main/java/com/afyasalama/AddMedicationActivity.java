@@ -17,9 +17,10 @@ import java.util.Locale;
 
 public class AddMedicationActivity extends AppCompatActivity {
     private EditText etName, etDosage;
-    private TextView tvTime;
+    private TextView tvTime, tvTitle;
     private String selectedTime = "";
     private DatabaseHelper dbHelper;
+    private Medication editMedication = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,25 +28,28 @@ public class AddMedicationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_medication);
 
         dbHelper = new DatabaseHelper(this);
+        tvTitle = findViewById(R.id.tv_add_med_title);
         etName = findViewById(R.id.et_med_name);
         etDosage = findViewById(R.id.et_dosage);
         tvTime = findViewById(R.id.tv_selected_time);
 
-        Button btnPickTime = findViewById(R.id.btn_pick_time);
-        btnPickTime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showTimePicker();
+        // Check if we are in Edit Mode
+        if (getIntent().hasExtra("medication")) {
+            editMedication = (Medication) getIntent().getSerializableExtra("medication");
+            if (editMedication != null) {
+                tvTitle.setText("Edit Medication");
+                etName.setText(editMedication.getName());
+                etDosage.setText(editMedication.getDosage());
+                selectedTime = editMedication.getTime();
+                tvTime.setText("Reminder set for: " + selectedTime);
             }
-        });
+        }
+
+        Button btnPickTime = findViewById(R.id.btn_pick_time);
+        btnPickTime.setOnClickListener(v -> showTimePicker());
 
         Button btnSave = findViewById(R.id.btn_save_med);
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveMedication();
-            }
-        });
+        btnSave.setOnClickListener(v -> saveMedication());
     }
 
     private void showTimePicker() {
@@ -53,12 +57,15 @@ public class AddMedicationActivity extends AppCompatActivity {
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int minute = c.get(Calendar.MINUTE);
 
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
-            @Override
-            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                selectedTime = String.format(Locale.getDefault(), "%02d:%02d", hourOfDay, minute);
-                tvTime.setText("Reminder set for: " + selectedTime);
-            }
+        if (editMedication != null) {
+            String[] parts = selectedTime.split(":");
+            hour = Integer.parseInt(parts[0]);
+            minute = Integer.parseInt(parts[1]);
+        }
+
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this, (view, hourOfDay, minuteOfHour) -> {
+            selectedTime = String.format(Locale.getDefault(), "%02d:%02d", hourOfDay, minuteOfHour);
+            tvTime.setText("Reminder set for: " + selectedTime);
         }, hour, minute, true);
         timePickerDialog.show();
     }
@@ -72,13 +79,24 @@ public class AddMedicationActivity extends AppCompatActivity {
             return;
         }
 
-        Medication med = new Medication(0, name, dosage, selectedTime);
-        long id = dbHelper.addMedication(med);
-        med.setId((int) id);
-
-        AlarmHelper.setAlarm(this, med);
-
-        Toast.makeText(this, "Medication added!", Toast.LENGTH_SHORT).show();
+        if (editMedication == null) {
+            // Add New
+            Medication med = new Medication(0, name, dosage, selectedTime);
+            long id = dbHelper.addMedication(med);
+            med.setId((int) id);
+            AlarmHelper.setAlarm(this, med);
+            Toast.makeText(this, "Medication added!", Toast.LENGTH_SHORT).show();
+        } else {
+            // Update Existing
+            editMedication.setName(name);
+            editMedication.setDosage(dosage);
+            editMedication.setTime(selectedTime);
+            dbHelper.updateMedication(editMedication);
+            
+            // Re-schedule alarm (it will overwrite the old one since PendingIntent ID is the same)
+            AlarmHelper.setAlarm(this, editMedication);
+            Toast.makeText(this, "Medication updated!", Toast.LENGTH_SHORT).show();
+        }
         finish();
     }
 }
