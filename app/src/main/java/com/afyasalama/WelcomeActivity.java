@@ -2,6 +2,7 @@ package com.afyasalama;
 
 import android.Manifest;
 import android.app.AlarmManager;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -31,7 +32,7 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (checkAndRequestPermissions()) {
-                    checkExactAlarmPermission();
+                    checkAlarmPermissions();
                 }
             }
         });
@@ -47,20 +48,30 @@ public class WelcomeActivity extends AppCompatActivity {
         return true;
     }
 
-    private void checkExactAlarmPermission() {
+    private void checkAlarmPermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
             if (!alarmManager.canScheduleExactAlarms()) {
                 Intent intent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
                 intent.setData(Uri.parse("package:" + getPackageName()));
                 startActivity(intent);
-                Toast.makeText(this, "Please allow Afya Salama to set exact alarms for reminders", Toast.LENGTH_LONG).show();
-            } else {
-                navigateToLogin();
+                Toast.makeText(this, "Please allow Afya Salama to set exact alarms", Toast.LENGTH_LONG).show();
+                return;
             }
-        } else {
-            navigateToLogin();
         }
+        
+        if (Build.VERSION.SDK_INT >= 34) { // Android 14
+            NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            if (!nm.canUseFullScreenIntent()) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_APP_USE_FULL_SCREEN_INTENT);
+                intent.setData(Uri.parse("package:" + getPackageName()));
+                startActivity(intent);
+                Toast.makeText(this, "Please allow full screen intents for medication alerts", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+
+        navigateToLogin();
     }
 
     @Override
@@ -68,7 +79,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PERMISSION_REQUEST_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                checkExactAlarmPermission();
+                checkAlarmPermissions();
             } else {
                 Toast.makeText(this, "Notification permission is required for medication reminders", Toast.LENGTH_LONG).show();
             }
