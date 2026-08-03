@@ -63,187 +63,186 @@
 34-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:18:9-61
 35        android:supportsRtl="true"
 35-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:19:9-35
-36        android:testOnly="true"
-37        android:theme="@style/Theme.AfyaSalama" >
-37-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:20:9-48
-38        <activity
-38-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:9-29:20
-39            android:name="com.afyasalama.WelcomeActivity"
-39-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:13-44
-40            android:exported="true" >
-40-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:13-36
-41            <intent-filter>
-41-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:13-28:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:26:17-69
-42-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:26:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:27:17-77
-44-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:27:27-74
-45            </intent-filter>
-46        </activity>
-47        <activity
-47-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:31:9-33:40
-48            android:name="com.afyasalama.MainActivity"
-48-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:32:13-41
-49            android:exported="false" />
-49-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:33:13-37
-50        <activity
-50-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:35:9-37:40
-51            android:name="com.afyasalama.LoginActivity"
-51-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:36:13-42
-52            android:exported="false" />
-52-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:37:13-37
-53        <activity
-53-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:39:9-41:40
-54            android:name="com.afyasalama.RegisterActivity"
-54-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:40:13-45
-55            android:exported="false" />
-55-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:41:13-37
-56        <activity
-56-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:43:9-45:40
-57            android:name="com.afyasalama.DashboardActivity"
-57-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:44:13-46
-58            android:exported="false" />
-58-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:45:13-37
-59        <activity
-59-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:47:9-49:40
-60            android:name="com.afyasalama.AddMedicationActivity"
-60-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:48:13-50
-61            android:exported="false" />
-61-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:49:13-37
-62        <activity
-62-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:51:9-53:40
-63            android:name="com.afyasalama.WaterIntakeActivity"
-63-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:52:13-48
-64            android:exported="false" />
-64-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:53:13-37
-65        <activity
-65-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:55:9-57:40
-66            android:name="com.afyasalama.DrugSearchActivity"
-66-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:56:13-47
-67            android:exported="false" />
-67-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:57:13-37
-68        <activity
-68-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:59:9-61:40
-69            android:name="com.afyasalama.DrugDetailActivity"
-69-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:60:13-47
-70            android:exported="false" />
-70-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:61:13-37
-71        <activity
-71-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:63:9-69:43
-72            android:name="com.afyasalama.AlarmActivity"
-72-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:64:13-42
-73            android:exported="false"
-73-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:65:13-37
-74            android:keepScreenOn="true"
-74-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:69:13-40
-75            android:launchMode="singleInstance"
-75-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:66:13-48
-76            android:showWhenLocked="true"
-76-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:67:13-42
-77            android:turnScreenOn="true" />
-77-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:68:13-40
-78
-79        <receiver
-79-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:71:9-74:39
-80            android:name="com.afyasalama.receivers.AlarmReceiver"
-80-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:72:13-52
-81            android:enabled="true"
-81-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:73:13-35
-82            android:exported="true" />
-82-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:74:13-36
-83        <receiver
-83-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:76:9-79:40
-84            android:name="com.afyasalama.receivers.WaterReminderReceiver"
-84-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:77:13-60
-85            android:enabled="true"
-85-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:78:13-35
-86            android:exported="false" />
-86-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:79:13-37
-87
-88        <activity
-88-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
-89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-89-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
-90            android:exported="false"
-90-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
-91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-91-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
-92
-93        <meta-data
-93-->[com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
-94            android:name="com.google.android.gms.version"
-94-->[com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
-95            android:value="@integer/google_play_services_version" />
-95-->[com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
-96
-97        <provider
-97-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-98            android:name="androidx.startup.InitializationProvider"
-98-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-99            android:authorities="com.afyasalama.androidx-startup"
-99-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-100            android:exported="false" >
-100-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-101            <meta-data
-101-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-102                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-102-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-103                android:value="androidx.startup" />
-103-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-104            <meta-data
-104-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-105-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-106                android:value="androidx.startup" />
-106-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-107            <meta-data
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-108                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-109                android:value="androidx.startup" />
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-110        </provider>
-111
-112        <receiver
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-113            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-114            android:directBootAware="false"
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-115            android:enabled="true"
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-116            android:exported="true"
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-117            android:permission="android.permission.DUMP" >
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-119                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-120            </intent-filter>
-121            <intent-filter>
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-122                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-123            </intent-filter>
-124            <intent-filter>
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-125                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-126            </intent-filter>
-127            <intent-filter>
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-128                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-129            </intent-filter>
-130        </receiver>
-131    </application>
-132
-133</manifest>
+36        android:theme="@style/Theme.AfyaSalama" >
+36-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:20:9-48
+37        <activity
+37-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:9-29:20
+38            android:name="com.afyasalama.WelcomeActivity"
+38-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:13-44
+39            android:exported="true" >
+39-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:13-36
+40            <intent-filter>
+40-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:13-28:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:26:17-69
+41-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:26:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:27:17-77
+43-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:27:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:31:9-33:40
+47            android:name="com.afyasalama.MainActivity"
+47-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:32:13-41
+48            android:exported="false" />
+48-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:33:13-37
+49        <activity
+49-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:35:9-37:40
+50            android:name="com.afyasalama.LoginActivity"
+50-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:36:13-42
+51            android:exported="false" />
+51-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:37:13-37
+52        <activity
+52-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:39:9-41:40
+53            android:name="com.afyasalama.RegisterActivity"
+53-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:40:13-45
+54            android:exported="false" />
+54-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:41:13-37
+55        <activity
+55-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:43:9-45:40
+56            android:name="com.afyasalama.DashboardActivity"
+56-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:44:13-46
+57            android:exported="false" />
+57-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:45:13-37
+58        <activity
+58-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:47:9-49:40
+59            android:name="com.afyasalama.AddMedicationActivity"
+59-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:48:13-50
+60            android:exported="false" />
+60-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:49:13-37
+61        <activity
+61-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:51:9-53:40
+62            android:name="com.afyasalama.WaterIntakeActivity"
+62-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:52:13-48
+63            android:exported="false" />
+63-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:53:13-37
+64        <activity
+64-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:55:9-57:40
+65            android:name="com.afyasalama.DrugSearchActivity"
+65-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:56:13-47
+66            android:exported="false" />
+66-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:57:13-37
+67        <activity
+67-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:59:9-61:40
+68            android:name="com.afyasalama.DrugDetailActivity"
+68-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:60:13-47
+69            android:exported="false" />
+69-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:61:13-37
+70        <activity
+70-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:63:9-69:43
+71            android:name="com.afyasalama.AlarmActivity"
+71-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:64:13-42
+72            android:exported="false"
+72-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:65:13-37
+73            android:keepScreenOn="true"
+73-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:69:13-40
+74            android:launchMode="singleInstance"
+74-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:66:13-48
+75            android:showWhenLocked="true"
+75-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:67:13-42
+76            android:turnScreenOn="true" />
+76-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:68:13-40
+77
+78        <receiver
+78-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:71:9-74:39
+79            android:name="com.afyasalama.receivers.AlarmReceiver"
+79-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:72:13-52
+80            android:enabled="true"
+80-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:73:13-35
+81            android:exported="true" />
+81-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:74:13-36
+82        <receiver
+82-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:76:9-79:40
+83            android:name="com.afyasalama.receivers.WaterReminderReceiver"
+83-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:77:13-60
+84            android:enabled="true"
+84-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:78:13-35
+85            android:exported="false" />
+85-->/home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:79:13-37
+86
+87        <activity
+87-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+88-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+91
+92        <meta-data
+92-->[com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+93            android:name="com.google.android.gms.version"
+93-->[com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+94            android:value="@integer/google_play_services_version" />
+94-->[com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+95
+96        <provider
+96-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+97            android:name="androidx.startup.InitializationProvider"
+97-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+98            android:authorities="com.afyasalama.androidx-startup"
+98-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+99            android:exported="false" >
+99-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+100            <meta-data
+100-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+101-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+102                android:value="androidx.startup" />
+102-->[androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+103            <meta-data
+103-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+104-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+105                android:value="androidx.startup" />
+105-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+106            <meta-data
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+108                android:value="androidx.startup" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+109        </provider>
+110
+111        <receiver
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+112            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+113            android:directBootAware="false"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+114            android:enabled="true"
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+115            android:exported="true"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+116            android:permission="android.permission.DUMP" >
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+118                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+121                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+122            </intent-filter>
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+124                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+125            </intent-filter>
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+127                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/cameltech/.gradle/caches/transforms-4/1fe09a0b4d14d57d5a67ae6150e5d234/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+128            </intent-filter>
+129        </receiver>
+130    </application>
+131
+132</manifest>

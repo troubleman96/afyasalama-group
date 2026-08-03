@@ -6,12 +6,14 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.afyasalama.models.Medication;
+import com.afyasalama.models.DrugLabel;
+import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "AfyaSalama.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
     // Medications Table
     private static final String TABLE_MEDICATIONS = "medications";
@@ -31,29 +33,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_STEPS_DATE = "date";
     private static final String COLUMN_STEPS_VALUE = "sensor_value";
 
+    // Drug History Table
+    private static final String TABLE_DRUG_HISTORY = "drug_history";
+    private static final String COLUMN_DRUG_ID = "id";
+    private static final String COLUMN_DRUG_BRAND = "brand_name";
+    private static final String COLUMN_DRUG_GENERIC = "generic_name";
+    private static final String COLUMN_DRUG_JSON = "json_data";
+
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_MEDS_TABLE = "CREATE TABLE " + TABLE_MEDICATIONS + "("
+        db.execSQL("CREATE TABLE " + TABLE_MEDICATIONS + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_NAME + " TEXT,"
                 + COLUMN_DOSAGE + " TEXT,"
-                + COLUMN_TIME + " TEXT" + ")";
-        db.execSQL(CREATE_MEDS_TABLE);
+                + COLUMN_TIME + " TEXT" + ")");
 
-        String CREATE_WATER_TABLE = "CREATE TABLE " + TABLE_WATER + "("
+        db.execSQL("CREATE TABLE " + TABLE_WATER + "("
                 + COLUMN_WATER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_WATER_AMOUNT + " INTEGER,"
-                + COLUMN_WATER_TIME + " INTEGER" + ")";
-        db.execSQL(CREATE_WATER_TABLE);
+                + COLUMN_WATER_TIME + " INTEGER" + ")");
 
-        String CREATE_STEPS_TABLE = "CREATE TABLE " + TABLE_STEPS + "("
+        db.execSQL("CREATE TABLE " + TABLE_STEPS + "("
                 + COLUMN_STEPS_DATE + " TEXT PRIMARY KEY,"
-                + COLUMN_STEPS_VALUE + " INTEGER" + ")";
-        db.execSQL(CREATE_STEPS_TABLE);
+                + COLUMN_STEPS_VALUE + " INTEGER" + ")");
+
+        db.execSQL("CREATE TABLE " + TABLE_DRUG_HISTORY + "("
+                + COLUMN_DRUG_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + COLUMN_DRUG_BRAND + " TEXT,"
+                + COLUMN_DRUG_GENERIC + " TEXT,"
+                + COLUMN_DRUG_JSON + " TEXT" + ")");
     }
 
     @Override
@@ -69,10 +81,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     + COLUMN_STEPS_DATE + " TEXT PRIMARY KEY,"
                     + COLUMN_STEPS_VALUE + " INTEGER" + ")");
         }
+        if (oldVersion < 4) {
+            db.execSQL("CREATE TABLE " + TABLE_DRUG_HISTORY + "("
+                    + COLUMN_DRUG_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                    + COLUMN_DRUG_BRAND + " TEXT,"
+                    + COLUMN_DRUG_GENERIC + " TEXT,"
+                    + COLUMN_DRUG_JSON + " TEXT" + ")");
+        }
     }
 
     // --- Medication Methods ---
-
     public long addMedication(Medication medication) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -115,7 +133,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // --- Water Methods ---
-
     public void addWaterIntake(int amount) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -140,7 +157,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // --- Steps Methods ---
-
     public int getStepsBaseline(String date) {
         int value = -1;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -159,6 +175,47 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(COLUMN_STEPS_DATE, date);
         values.put(COLUMN_STEPS_VALUE, value);
         db.insertWithOnConflict(TABLE_STEPS, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+        db.close();
+    }
+
+    // --- Drug History Methods ---
+    public void addDrugToHistory(DrugLabel drug) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        
+        // Remove if already exists to move to top (LIFO-like behavior)
+        db.delete(TABLE_DRUG_HISTORY, COLUMN_DRUG_BRAND + " = ?", new String[]{drug.getBrandName()});
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_DRUG_BRAND, drug.getBrandName());
+        values.put(COLUMN_DRUG_GENERIC, drug.getGenericName());
+        values.put(COLUMN_DRUG_JSON, new Gson().toJson(drug));
+        db.insert(TABLE_DRUG_HISTORY, null, values);
+        
+        // Keep only top 10
+        db.execSQL("DELETE FROM " + TABLE_DRUG_HISTORY + " WHERE " + COLUMN_DRUG_ID + " NOT IN " +
+                "(SELECT " + COLUMN_DRUG_ID + " FROM " + TABLE_DRUG_HISTORY + " ORDER BY " + COLUMN_DRUG_ID + " DESC LIMIT 10)");
+        
+        db.close();
+    }
+
+    public List<DrugLabel> getSearchHistory() {
+        List<DrugLabel> list = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_DRUG_JSON + " FROM " + TABLE_DRUG_HISTORY + " ORDER BY " + COLUMN_DRUG_ID + " DESC", null);
+        Gson gson = new Gson();
+        if (cursor.moveToFirst()) {
+            do {
+                list.add(gson.fromJson(cursor.getString(0), DrugLabel.class));
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return list;
+    }
+
+    public void clearSearchHistory() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_DRUG_HISTORY, null, null);
         db.close();
     }
 

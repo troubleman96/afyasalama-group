@@ -3372,6 +3372,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_history_header
 id left
 id leftToRight
 id legacy
@@ -3625,6 +3626,7 @@ id triangle
 id tv_add_med_title
 id tv_alarm_dosage
 id tv_alarm_med_name
+id tv_clear_history
 id tv_current_ml
 id tv_detail_brand_name
 id tv_detail_dosage

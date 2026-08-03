@@ -76,6 +76,10 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/fragment_home.xml"
     },
     {
+        "merged": "com.afyasalama.app-debug-33:/layout_fragment_search.xml.flat",
+        "source": "com.afyasalama.app-main-35:/layout/fragment_search.xml"
+    },
+    {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_fragment_search.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/fragment_search.xml"
     },

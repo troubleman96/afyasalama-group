@@ -12,7 +12,15 @@
         android:text="Drug Information Search"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find safety info, side effects, and usage instructions for medications."
+        android:textColor="@color/gray_text"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="24dp" />
 
     <EditText
@@ -24,6 +32,31 @@
         android:paddingHorizontal="20dp"
         android:inputType="text"
         android:imeOptions="actionSearch" />
+
+    <RelativeLayout
+        android:id="@+id/layout_history_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Searches"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_clear_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:textColor="@color/primary_blue"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
     <ProgressBar
         android:id="@+id/pb_search"
