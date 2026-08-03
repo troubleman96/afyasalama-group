@@ -21,14 +21,24 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "Medication Reminders", NotificationManager.IMPORTANCE_HIGH);
+            channel.setSound(null, null); // We handle sound in Activity
+            channel.enableVibration(true);
+            channel.setLockscreenVisibility(NotificationCompat.VISIBILITY_PUBLIC);
             notificationManager.createNotificationChannel(channel);
         }
 
         Intent alarmIntent = new Intent(context, com.afyasalama.AlarmActivity.class);
         alarmIntent.putExtra("med_name", medName);
         alarmIntent.putExtra("dosage", dosage);
-        alarmIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        alarmIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         
+        // Explicitly start activity (important for many devices)
+        try {
+            context.startActivity(alarmIntent);
+        } catch (Exception e) {
+            // Log or handle if needed
+        }
+
         PendingIntent fullScreenPendingIntent = PendingIntent.getActivity(context, 0,
                 alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 

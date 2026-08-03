@@ -61,6 +61,7 @@
         <activity
             android:name=".AlarmActivity"
             android:exported="false"
+            android:launchMode="singleInstance"
             android:showWhenLocked="true"
             android:turnScreenOn="true"
             android:keepScreenOn="true" />
