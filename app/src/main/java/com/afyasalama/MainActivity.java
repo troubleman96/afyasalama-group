@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import com.afyasalama.fragments.HomeFragment;
 import com.afyasalama.fragments.SearchFragment;
 import com.afyasalama.fragments.WaterFragment;
+import com.afyasalama.utils.WaterReminderHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Schedule water reminders
+        WaterReminderHelper.scheduleWaterReminders(this);
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnItemSelectedListener(item -> {

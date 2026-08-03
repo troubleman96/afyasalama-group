@@ -52,8 +52,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Goal: 2000 ml"
-                android:textSize="14sp"
-                android:textColor="@color/gray_text" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
         </LinearLayout>
     </RelativeLayout>
 
