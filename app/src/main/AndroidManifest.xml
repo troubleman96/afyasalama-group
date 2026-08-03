@@ -27,6 +27,10 @@
         </activity>
 
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
 
@@ -44,6 +48,14 @@
 
         <activity
             android:name=".WaterIntakeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DrugSearchActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DrugDetailActivity"
             android:exported="false" />
 
         <activity

@@ -45,10 +45,18 @@ public class AlarmHelper {
 
         if (alarmManager != null) {
             try {
-                alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !alarmManager.canScheduleExactAlarms()) {
+                    Log.e(TAG, "Cannot schedule exact alarms. Permission missing.");
+                    // Fallback to non-exact if possible or just log
+                    alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+                } else {
+                    alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+                }
                 Log.d(TAG, "Alarm set for: " + calendar.getTime().toString() + " (Med: " + med.getName() + ")");
             } catch (SecurityException e) {
                 Log.e(TAG, "SecurityException: " + e.getMessage());
+                // Fallback for devices where canScheduleExactAlarms() might still throw or is restricted
+                alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
             }
         }
     }

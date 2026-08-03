@@ -16,6 +16,10 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_register.xml"
     },
     {
+        "merged": "com.afyasalama.app-debug-31:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.afyasalama.app-main-33:/menu/bottom_nav_menu.xml"
+    },
+    {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_drug_search.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_drug_search.xml"
     },
@@ -36,8 +40,12 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/drawable/capsule_edit_text.xml"
     },
     {
-        "merged": "com.afyasalama.app-debug-31:/layout_activity_dashboard.xml.flat",
-        "source": "com.afyasalama.app-main-33:/layout/activity_dashboard.xml"
+        "merged": "com.afyasalama.app-debug-31:/layout_fragment_search.xml.flat",
+        "source": "com.afyasalama.app-main-33:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.afyasalama.app-debug-31:/layout_fragment_water.xml.flat",
+        "source": "com.afyasalama.app-main-33:/layout/fragment_water.xml"
     },
     {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_dashboard.xml.flat",
@@ -56,8 +64,16 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_add_medication.xml"
     },
     {
+        "merged": "com.afyasalama.app-debug-31:/layout_fragment_home.xml.flat",
+        "source": "com.afyasalama.app-main-33:/layout/fragment_home.xml"
+    },
+    {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/layout_activity_welcome.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-33:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.afyasalama.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.afyasalama.app-main-33:/layout/activity_main.xml"
     },
     {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-31:/drawable_circle_placeholder.xml.flat",
