@@ -1,54 +1,109 @@
-# Afya Salama App
+# 🏥 Afya Salama - Your Personalized Health Companion
 
-Afya Salama is a smart mobile application designed to help users manage their medication schedules and daily hydration levels. The app focuses on ensuring users never miss a dose through an interactive and reliable reminder system.
+Afya Salama is a comprehensive, smart mobile application engineered to empower users in managing their medication adherence and hydration goals. Built with a focus on reliability, accessibility, and modern design, the app ensures that critical health tasks are never overlooked.
 
-## 🚀 Features
-- **Medication Reminders**: Add medication names, dosages, and exact reminder times.
-- **Interactive Alarm**: Uses the phone's **accelerometer sensor**. Users must shake the phone to stop the alarm, ensuring they are fully awake.
-- **Modern UI**: Clean, Figma-inspired design with capsule-shaped inputs and blue accents.
-- **Water Intake Tracking**: Dynamic goals that adjust based on **weather temperature** and **user activity (steps)**.
-- **Health Log**: Track water consumption and medication history in real-time.
+---
 
-## 🛠 Tech Stack
+## 🌟 Key Features
+
+### 1. 🔔 Intelligent Medication Reminder System
+A high-reliability alarm system designed to bypass standard mobile distractions.
+- **Precision Scheduling**: Uses `AlarmManager` with exact timing to ensure reminders fire precisely when needed.
+- **Interactive "Shake-to-Stop"**: Leverage the phone's **accelerometer**; users must physically shake the device to dismiss alarms, ensuring cognitive alertness.
+- **Lock-Screen Override**: Automatically wakes the device and launches the interaction screen, even if the phone is locked.
+
+### 2. 💧 Dynamic Water Intake Tracking
+Hydration goals that adapt to your lifestyle and environment.
+- **Smart Goals**: The app dynamically adjusts your daily water target based on **ambient temperature** and **physical activity (Step Counter)**.
+- **Real-time Progress**: Visual circular progress tracking with quick-log buttons (250ml / 500ml).
+- **History Logs**: Persistent storage of daily intake via SQLite.
+
+### 3. 🔍 Drug Information & Safety Search
+Instant access to medical knowledge using the **OpenFDA API**.
+- **Real-time Search**: Find detailed labels for thousands of medications.
+- **Safety First**: Deep dives into **Side Effects**, **Dosage Instructions**, and **Indications**.
+- **Modern Search UX**: Capsule-styled search interface with efficient networking via Retrofit.
+
+### 4. 🧭 Modern Navigation
+- **Bottom Navigation Bar**: Seamlessly switch between Dashboard, Water Tracker, and Drug Search.
+- **Fragment-Based Architecture**: Ensures a fast, flicker-free experience.
+
+---
+
+## 🛠 Tech Stack & Architecture
+
+- **Platform**: Android (Native)
 - **Language**: Java
-- **Database**: SQLite (via `DatabaseHelper`)
-- **Architecture**: Classic Android with Helper/Receiver patterns.
-- **Sensors**: Accelerometer (Shake Detection).
-- **UI Framework**: XML with Material 3 components.
+- **UI Framework**: Material Design 3 (XML)
+- **Networking**: Retrofit 2.9 + Gson (for API communication)
+- **Database**: SQLite (Local persistence)
+- **Hardware Integration**:
+    - **Accelerometer**: For shake detection.
+    - **Step Counter Sensor**: For activity tracking.
+- **Architecture**: Modular Fragment-based architecture with decentralized Helper/Receiver logic.
 
-## 🔔 Medication Reminder System
+---
 
-The reminder system is built for high reliability on modern Android versions (Android 12 to Android 14+).
+## 🔐 Permissions & System Configuration
 
-### Permissions & Configuration
-To ensure reminders work correctly, the app utilizes the following:
-1.  **Notification Permission (`POST_NOTIFICATIONS`)**: Required for Android 13+ to display the medication alert.
-2.  **Exact Alarm Permission (`SCHEDULE_EXACT_ALARM`)**: Required for Android 12+ to fire the alarm precisely at the scheduled time. The app will prompt you to enable this in system settings.
-3.  **Full Screen Intent (`USE_FULL_SCREEN_INTENT`)**: Allows the alarm screen to appear automatically even when the phone is locked.
-4.  **Wake Lock & Vibrate**: Ensures the phone stays awake during the alarm and provides tactile feedback.
+To provide "real alarm" functionality and smart tracking, the app utilizes several critical permissions:
 
-### How it Works
-1.  **Scheduling**: When a medication is saved, `AlarmHelper` calculates the next occurrence and schedules it using `AlarmManager.setExactAndAllowWhileIdle`.
-2.  **Triggering**: The `AlarmReceiver` catches the alarm intent, creates a high-priority notification channel, and launches the `AlarmActivity`.
-3.  **Interaction**: `AlarmActivity` plays the default alarm sound and vibrates. The user must **shake the device** (detected via `ShakeDetector`) to dismiss the alarm and mark the medication as taken.
+| Permission | Purpose |
+| :--- | :--- |
+| `POST_NOTIFICATIONS` | Required for Android 13+ to show medication alerts. |
+| `SCHEDULE_EXACT_ALARM` | Critical for firing reminders at the exact second scheduled. |
+| `USE_FULL_SCREEN_INTENT` | Allows the alarm screen to pop up over the lock screen automatically. |
+| `ACTIVITY_RECOGNITION` | Enables the step counter for dynamic hydration goals. |
+| `WAKE_LOCK` | Keeps the CPU active during the alarm transition. |
+| `INTERNET` | Required for fetching real-time drug information from OpenFDA. |
 
-## 💧 Dynamic Water Intake
-The app helps you stay hydrated by calculating a personalized water goal that changes throughout the day.
-- **Activity Tracking**: Uses the phone's **Step Counter** sensor to increase your water goal as you move.
-- **Weather Awareness**: Adjusts hydration targets based on outside temperature.
-- **Detailed Tracking**: Log your intake and view progress via a circular progress visualization.
-- **Documentation**: For full technical details, see the [Water Tracking Guide](file:///home/cameltech/Desktop/afya_salama/app/app/WATER_TRACKING.md).
+---
 
-## 🎨 UI Design
-The interface has been meticulously reconstructed to match the Figma designs provided in the `Afya salama - designs/` folder.
-- **Capsule Shapes**: All input fields and buttons use a modern capsule (fully rounded) style for a friendly and accessible look.
-- **Color Palette**:
-    - `Sky Blue (#AEE6FF)`: Used for the welcome screen header.
-    - `Dark Blue (#00478F)`: Used for primary actions and buttons.
-    - `Light Grey (#F1F1F1)`: Used for input field backgrounds.
+## 🎨 UI/UX Design
+
+The interface is meticulously aligned with the Figma "Afya Salama" design system.
+- **Design Language**: Modern, clean, and medical-friendly.
+- **Shapes**: Consistent use of **Capsule (fully rounded)** input fields and buttons.
+- **Colors**:
+    - **Primary Blue (`#00478F`)**: Used for primary calls to action.
+    - **Sky Blue (`#AEE6FF`)**: Used for background accents and headers.
+    - **Light Grey (`#F1F1F1`)**: Used for high-legibility input backgrounds.
+
+---
 
 ## 🏁 Getting Started
-1.  **Connect Device**: Connect your Android phone via USB and enable USB Debugging.
-2.  **Build**: Open the project in Android Studio and run the `:app` module.
-3.  **Permissions**: On the first launch, click "Get Started" and grant the requested Notification and Exact Alarm permissions.
-4.  **Set Reminder**: Go to the Dashboard, click the `+` button, add a medication, and set a time 1 minute into the future to test the system!
+
+### Prerequisites
+- Android Studio Jellyfish or newer.
+- An Android device (Physical device recommended for sensor testing).
+
+### Installation
+1. **Clone the Repo**:
+   ```bash
+   git clone git@github.com:troubleman96/afyasalama-group.git
+   ```
+2. **Build**:
+   Open in Android Studio and run the `:app` module.
+3. **Permissions**:
+   Upon first launch, click **"Get Started"** on the Welcome screen. You will be prompted to grant Notification and Exact Alarm permissions. **Please grant all permissions** for the full experience.
+
+### Testing the Alarm
+1. Navigate to the Dashboard.
+2. Click the `+` button.
+3. Add a test medication and set the reminder for **1 minute from now**.
+4. **Lock your phone**.
+5. Wait for the screen to wake up automatically and start shaking!
+
+---
+
+## 📦 Build Artifacts
+The latest debug build is available at:
+`app/build/outputs/apk/debug/app-debug.apk`
+
+---
+
+## 🗺 Roadmap
+- [ ] Integration of real-time weather API for hydration.
+- [ ] User profiles and health history visualization.
+- [ ] Multi-language support.
+- [ ] Dark Mode optimization.

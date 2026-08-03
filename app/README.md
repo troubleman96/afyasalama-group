@@ -1,41 +1,51 @@
-# Afya Salama - App Module
+# Afya Salama - App Module Technical Documentation
 
-This module contains the source code for the Afya Salama Android application.
+This module contains the core logic, UI, and hardware integrations for the Afya Salama application.
 
-## Authentication Flow
-The app starts with a **Welcome Screen** that introduces the app's purpose.
-- **Get Started**: Leads to the Login Screen.
-- **Login Screen**: Allows users to enter credentials or navigate to registration.
-- **Register Screen**: Allows new users to create an account.
+## 📁 Package Structure
 
-## Implementation Details
-- **Activities**:
-    - `WelcomeActivity`: Entry point.
-    - `LoginActivity`: Handles user login.
-    - `RegisterActivity`: Handles new user registration.
-- **Layouts**:
-    - `activity_welcome.xml`: Clean landing page layout.
-    - `activity_login.xml`: Input-focused login layout.
-    - `activity_register.xml`: Form-based registration layout.
+### `com.afyasalama`
+- **`MainActivity.java`**: The host activity managing the `BottomNavigationView` and Fragment transactions.
+- **`WelcomeActivity.java`**: Handles the onboarding flow and critical permission requests (Notifications, Exact Alarms, Full Screen Intents).
+- **`AlarmActivity.java`**: The high-priority activity launched when a medication is due. Handles UI flags for lock-screen override and sound/vibration logic.
 
-## Medication Reminder System
-The core feature of Afya Salama is helping users manage their medications.
-- **Dashboard**: Displays a list of all scheduled medications.
-- **Add Medication**: Users can input the medication name, dosage, and set a reminder time using a time picker.
-- **SQLite Database**: Medications are stored locally on the device.
-- **Local Notifications**: The app schedules alarms that trigger high-priority notifications at the set time.
+### `com.afyasalama.fragments`
+- **`HomeFragment.java`**: Dashboard logic, displaying the medication list via a RecyclerView.
+- **`WaterFragment.java`**: Manages the hydration tracker, sensor listeners, and goal updates.
+- **`SearchFragment.java`**: Logic for the OpenFDA drug search interface.
 
-## Implementation Details
-- **Models**: `Medication` class for data representation.
-- **Database**: `DatabaseHelper` manages SQLite CRUD operations.
-- **UI Components**:
-    - `DashboardActivity`: Uses a `RecyclerView` with `MedicationAdapter`.
-    - `AddMedicationActivity`: Form for data entry.
-- **Alert Logic**:
-    - `AlarmHelper`: Schedules alarms using `AlarmManager`.
-    - `AlarmReceiver`: Handles the alarm broadcast and displays the notification.
+### `com.afyasalama.utils`
+- **`AlarmHelper.java`**: Utility for scheduling/canceling alarms with `AlarmManager`.
+- **`WaterGoalManager.java`**: Pure logic class for calculating hydration targets based on temperature and steps.
+- **`ShakeDetector.java`**: Implementation of `SensorEventListener` tuned specifically for alarm dismissal.
 
-## Next Steps
-- Integrate Accelerometer for the shake-to-stop feature.
-- Implement Water Tracking functionality.
-- Integrate Weather API for dynamic hydration goals.
+### `com.afyasalama.network`
+- **`RetrofitClient.java`**: Singleton provider for the Retrofit instance.
+- **`FdaApiService.java`**: Interface defining endpoints for the OpenFDA Drug Label API.
+
+## 🛠 Hardware & Sensor Integration
+
+### Accelerometer (Shake Detection)
+The `ShakeDetector` uses the gravity-normalized G-force to detect physical movement.
+- **Threshold**: `2.1F` (Tuned for responsiveness).
+- **Logic**: Requires 3 distinct shakes within a 3-second window to trigger an "OnShake" event.
+
+### Step Counter
+The `WaterFragment` registers a listener for `Sensor.TYPE_STEP_COUNTER`.
+- **Logic**: The sensor provides a cumulative step count. The app calculates deltas to adjust the hydration goal dynamically (+100ml per 1000 steps).
+
+## 📡 Networking
+- **API**: [OpenFDA Drug Label API](https://open.fda.gov/apis/drug/label/)
+- **Endpoints**: `drug/label.json`
+- **Search Query**: Uses `openfda.brand_name` for targeted results.
+
+## 🗄 Data Persistence
+Uses a `SQLiteOpenHelper` implementation (`DatabaseHelper`) with two main tables:
+1. `medications`: Stores ID, Name, Dosage, and Time.
+2. `water_intake`: Stores ID, Amount (ml), and Timestamp.
+
+## 🎨 UI Components
+- **Drawables**: 
+    - `capsule_edit_text.xml`: Standard background for all inputs.
+    - `capsule_button_blue.xml`: Primary action button styling.
+- **Themes**: Material 3 base with custom color overrides for Figma alignment.
