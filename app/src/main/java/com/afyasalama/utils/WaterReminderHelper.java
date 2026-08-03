@@ -14,9 +14,9 @@ public class WaterReminderHelper {
         Intent intent = new Intent(context, WaterReminderReceiver.class);
         PendingIntent pi = PendingIntent.getBroadcast(context, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
-        // Schedule every 2 hours
-        long interval = AlarmManager.INTERVAL_HOUR * 2;
-        long triggerTime = System.currentTimeMillis() + interval;
+        // Schedule every 1 hour for better visibility during testing
+        long interval = AlarmManager.INTERVAL_HOUR;
+        long triggerTime = System.currentTimeMillis() + 1000 * 30; // First reminder in 30 seconds for immediate testing
 
         if (am != null) {
             am.setInexactRepeating(AlarmManager.RTC_WAKEUP, triggerTime, interval, pi);
