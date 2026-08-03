@@ -1,14 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-76:12
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-76:12
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-76:12
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-76:12
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:2:1-77:12
 MERGED from [com.google.android.material:material:1.11.0] /home/cameltech/.gradle/caches/transforms-4/f24bb388571a863fe3c52d0fa21a2cf6/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cameltech/.gradle/caches/transforms-4/2f17bec8238adc1bf46aa2bddb1c1bf7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/cameltech/.gradle/caches/transforms-4/49f2ae8d315730dcf0833adde653a5bd/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/cameltech/.gradle/caches/transforms-4/2ffe3d92c75e10c6f3f8bef627e44e2f/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /home/cameltech/.gradle/caches/transforms-4/36e1c7342e9112374c211f3425e75cb5/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/cameltech/.gradle/caches/transforms-4/1c38185a113000c8675644555f6fe65b/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/cameltech/.gradle/caches/transforms-4/ea1070eab38c1d176db2c0c96f06a0b2/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] /home/cameltech/.gradle/caches/transforms-4/987248cfc8c10fbf6e49ba99c8d2be4f/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] /home/cameltech/.gradle/caches/transforms-4/3d6d19d183c0871347b1126f1690724b/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/cameltech/.gradle/caches/transforms-4/a34beca56261f159e4b5d3509b90dd1d/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
@@ -81,13 +85,25 @@ uses-permission#android.permission.ACTIVITY_RECOGNITION
 ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
 		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:11:22-78
 application
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:12:5-74:19
-INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:12:5-74:19
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:13:5-75:19
+INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:13:5-75:19
 MERGED from [com.google.android.material:material:1.11.0] /home/cameltech/.gradle/caches/transforms-4/f24bb388571a863fe3c52d0fa21a2cf6/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /home/cameltech/.gradle/caches/transforms-4/f24bb388571a863fe3c52d0fa21a2cf6/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cameltech/.gradle/caches/transforms-4/2f17bec8238adc1bf46aa2bddb1c1bf7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cameltech/.gradle/caches/transforms-4/2f17bec8238adc1bf46aa2bddb1c1bf7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /home/cameltech/.gradle/caches/transforms-4/36e1c7342e9112374c211f3425e75cb5/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /home/cameltech/.gradle/caches/transforms-4/36e1c7342e9112374c211f3425e75cb5/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/cameltech/.gradle/caches/transforms-4/ea1070eab38c1d176db2c0c96f06a0b2/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/cameltech/.gradle/caches/transforms-4/ea1070eab38c1d176db2c0c96f06a0b2/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
@@ -105,103 +121,103 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/cameltech/.gradle/cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /home/cameltech/.gradle/caches/transforms-4/b06a0754b3702ea81ce4d3a9c88f93e5/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:16:9-61
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:17:9-61
 	android:icon
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:14:9-56
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:15:9-56
 	android:allowBackup
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:18:9-48
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:19:9-48
 activity#com.afyasalama.WelcomeActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:20:9-27:20
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:21:9-28:20
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:13-36
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:21:13-44
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:22:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:23:13-26:29
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.afyasalama.MainActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:29:9-31:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:30:13-41
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:31:13-41
 activity#com.afyasalama.LoginActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:33:9-35:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:34:9-36:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:34:13-42
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:35:13-42
 activity#com.afyasalama.RegisterActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:37:9-39:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:39:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:38:13-45
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:39:13-45
 activity#com.afyasalama.DashboardActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:41:9-43:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:42:9-44:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:42:13-46
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:43:13-46
 activity#com.afyasalama.AddMedicationActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:45:9-47:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:46:9-48:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:47:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:48:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:46:13-50
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:47:13-50
 activity#com.afyasalama.WaterIntakeActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:49:9-51:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:51:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:50:13-48
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:51:13-48
 activity#com.afyasalama.DrugSearchActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:53:9-55:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:54:9-56:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:55:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:54:13-47
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:55:13-47
 activity#com.afyasalama.DrugDetailActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:57:9-59:40
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:58:9-60:40
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:59:13-37
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:58:13-47
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:59:13-47
 activity#com.afyasalama.AlarmActivity
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:61:9-67:43
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:62:9-68:43
 	android:turnScreenOn
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:66:13-40
-	android:showWhenLocked
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:65:13-42
-	android:launchMode
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:64:13-48
-	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:63:13-37
-	android:keepScreenOn
 		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:67:13-40
-	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:62:13-42
-receiver#com.afyasalama.receivers.AlarmReceiver
-ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:69:9-72:39
-	android:enabled
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:71:13-35
+	android:showWhenLocked
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:66:13-42
+	android:launchMode
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:65:13-48
 	android:exported
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:72:13-36
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:64:13-37
+	android:keepScreenOn
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:68:13-40
 	android:name
-		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:70:13-52
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:63:13-42
+receiver#com.afyasalama.receivers.AlarmReceiver
+ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:70:9-73:39
+	android:enabled
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:72:13-35
+	android:exported
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:73:13-36
+	android:name
+		ADDED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml:71:13-52
 uses-sdk
 INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml
@@ -214,8 +230,16 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/cameltech/.grad
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/cameltech/.gradle/caches/transforms-4/49f2ae8d315730dcf0833adde653a5bd/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/cameltech/.gradle/caches/transforms-4/2ffe3d92c75e10c6f3f8bef627e44e2f/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/cameltech/.gradle/caches/transforms-4/2ffe3d92c75e10c6f3f8bef627e44e2f/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /home/cameltech/.gradle/caches/transforms-4/36e1c7342e9112374c211f3425e75cb5/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /home/cameltech/.gradle/caches/transforms-4/36e1c7342e9112374c211f3425e75cb5/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/cameltech/.gradle/caches/transforms-4/1c38185a113000c8675644555f6fe65b/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/cameltech/.gradle/caches/transforms-4/1c38185a113000c8675644555f6fe65b/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/cameltech/.gradle/caches/transforms-4/ea1070eab38c1d176db2c0c96f06a0b2/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/cameltech/.gradle/caches/transforms-4/ea1070eab38c1d176db2c0c96f06a0b2/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] /home/cameltech/.gradle/caches/transforms-4/987248cfc8c10fbf6e49ba99c8d2be4f/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /home/cameltech/.gradle/caches/transforms-4/987248cfc8c10fbf6e49ba99c8d2be4f/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.8.0] /home/cameltech/.gradle/caches/transforms-4/3d6d19d183c0871347b1126f1690724b/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
@@ -292,6 +316,20 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/cameltech/
 		INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/cameltech/Desktop/afya_salama/app/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /home/cameltech/.gradle/caches/transforms-4/2011fc94424edcb5f1e37d2b600f43f7/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /home/cameltech/.gradle/caches/transforms-4/4b39c44ef4980fd89b4803fb15543767/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] /home/cameltech/.gradle/caches/transforms-4/ff5364a924633a5302f9ce9723979915/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/cameltech/.gradle/caches/transforms-4/0ebaf2ef63efca72f0462dcc47fbdea9/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
