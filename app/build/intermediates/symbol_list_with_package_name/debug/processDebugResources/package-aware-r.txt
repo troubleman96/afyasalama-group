@@ -3001,6 +3001,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_bg
 drawable capsule_button_blue
+drawable capsule_button_grey
 drawable capsule_edit_text
 drawable circle_placeholder
 drawable common_full_open_on_phone
@@ -3341,6 +3342,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guideline_h50
 id header_title
 id hideable
 id home

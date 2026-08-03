@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Afya Salama</string>
     <string name="welcome_title">AFYA SALAMA</string>
-    <string name="welcome_subtitle">\" Medication reminders and a perfect way to stay hydrated \"</string>
+    <string name="welcome_subtitle">\" Medication reminders and\na perfect way to stay hydrated \"</string>
     <string name="get_started">Get started</string>
     <string name="login_title">Welcome Back</string>
     <string name="email_hint">Email</string>

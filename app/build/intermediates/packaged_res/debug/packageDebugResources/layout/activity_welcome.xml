@@ -5,64 +5,78 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <!-- Blue Background (50%) -->
     <View
         android:id="@+id/top_background"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/sky_blue"
-        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_h50"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- 3D Illustration Placeholder (Centered on the line) -->
     <ImageView
         android:id="@+id/welcome_image"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
         android:src="@android:drawable/ic_menu_gallery"
-        app:layout_constraintBottom_toBottomOf="@+id/top_background"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_h50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_background" />
+        app:layout_constraintTop_toTopOf="@+id/guideline_h50" />
 
+    <!-- Title: AFYA SALAMA (Bold & Italic) -->
     <TextView
         android:id="@+id/tv_welcome_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/welcome_title"
         android:textColor="@color/black"
-        android:textSize="32sp"
-        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_image" />
 
+    <!-- Subtitle: Italic with quotes -->
     <TextView
         android:id="@+id/tv_welcome_subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="48dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/welcome_subtitle"
         android:textColor="@color/gray_text"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_welcome_title" />
 
+    <!-- Button: Get started (Light Grey, Bold) -->
     <Button
         android:id="@+id/btn_get_started"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="#E0E0E0"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/capsule_button_grey"
+        app:backgroundTint="@null"
         android:text="@string/get_started"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="22sp"
         android:textStyle="bold"
+        style="@style/Widget.Material3.Button"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

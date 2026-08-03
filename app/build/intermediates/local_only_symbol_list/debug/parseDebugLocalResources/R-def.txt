@@ -10,6 +10,7 @@ color sky_blue
 color white
 drawable button_bg
 drawable capsule_button_blue
+drawable capsule_button_grey
 drawable capsule_edit_text
 drawable circle_placeholder
 drawable ic_launcher_foreground
@@ -29,6 +30,7 @@ id et_med_name
 id et_password
 id fab_add_med
 id fragment_container
+id guideline_h50
 id iv_alarm_icon
 id nav_drugs
 id nav_home
