@@ -3234,6 +3234,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cb_agree_terms
 id center
 id centerCrop
 id centerInside
@@ -3315,6 +3316,10 @@ id et_drug_search
 id et_email
 id et_med_name
 id et_password
+id et_register_confirm_password
+id et_register_email
+id et_register_name
+id et_register_password
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

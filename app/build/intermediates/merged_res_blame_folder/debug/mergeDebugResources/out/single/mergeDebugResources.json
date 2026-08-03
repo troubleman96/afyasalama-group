@@ -40,10 +40,6 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/drawable/capsule_edit_text.xml"
     },
     {
-        "merged": "com.afyasalama.app-debug-33:/layout_fragment_water.xml.flat",
-        "source": "com.afyasalama.app-main-35:/layout/fragment_water.xml"
-    },
-    {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_activity_add_medication.xml.flat",
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/activity_add_medication.xml"
     },
@@ -76,8 +72,8 @@
         "source": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-main-35:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.afyasalama.app-debug-33:/layout_fragment_search.xml.flat",
-        "source": "com.afyasalama.app-main-35:/layout/fragment_search.xml"
+        "merged": "com.afyasalama.app-debug-33:/layout_activity_register.xml.flat",
+        "source": "com.afyasalama.app-main-35:/layout/activity_register.xml"
     },
     {
         "merged": "/home/cameltech/.gradle/daemon/8.7/com.afyasalama.app-debug-33:/layout_fragment_search.xml.flat",

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "AfyaSalama.db";
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
 
     // Medications Table
     private static final String TABLE_MEDICATIONS = "medications";
@@ -39,6 +39,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_DRUG_BRAND = "brand_name";
     private static final String COLUMN_DRUG_GENERIC = "generic_name";
     private static final String COLUMN_DRUG_JSON = "json_data";
+
+    // Users Table
+    private static final String TABLE_USERS = "users";
+    private static final String COLUMN_USER_ID = "id";
+    private static final String COLUMN_USER_NAME = "full_name";
+    private static final String COLUMN_USER_EMAIL = "email";
+    private static final String COLUMN_USER_PASSWORD = "password";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -66,6 +73,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_DRUG_BRAND + " TEXT,"
                 + COLUMN_DRUG_GENERIC + " TEXT,"
                 + COLUMN_DRUG_JSON + " TEXT" + ")");
+
+        db.execSQL("CREATE TABLE " + TABLE_USERS + "("
+                + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + COLUMN_USER_NAME + " TEXT,"
+                + COLUMN_USER_EMAIL + " TEXT UNIQUE,"
+                + COLUMN_USER_PASSWORD + " TEXT" + ")");
     }
 
     @Override
@@ -87,6 +100,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     + COLUMN_DRUG_BRAND + " TEXT,"
                     + COLUMN_DRUG_GENERIC + " TEXT,"
                     + COLUMN_DRUG_JSON + " TEXT" + ")");
+        }
+        if (oldVersion < 5) {
+            db.execSQL("CREATE TABLE " + TABLE_USERS + "("
+                    + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                    + COLUMN_USER_NAME + " TEXT,"
+                    + COLUMN_USER_EMAIL + " TEXT UNIQUE,"
+                    + COLUMN_USER_PASSWORD + " TEXT" + ")");
         }
     }
 
@@ -181,20 +201,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // --- Drug History Methods ---
     public void addDrugToHistory(DrugLabel drug) {
         SQLiteDatabase db = this.getWritableDatabase();
-        
-        // Remove if already exists to move to top (LIFO-like behavior)
         db.delete(TABLE_DRUG_HISTORY, COLUMN_DRUG_BRAND + " = ?", new String[]{drug.getBrandName()});
-
         ContentValues values = new ContentValues();
         values.put(COLUMN_DRUG_BRAND, drug.getBrandName());
         values.put(COLUMN_DRUG_GENERIC, drug.getGenericName());
         values.put(COLUMN_DRUG_JSON, new Gson().toJson(drug));
         db.insert(TABLE_DRUG_HISTORY, null, values);
-        
-        // Keep only top 10
         db.execSQL("DELETE FROM " + TABLE_DRUG_HISTORY + " WHERE " + COLUMN_DRUG_ID + " NOT IN " +
                 "(SELECT " + COLUMN_DRUG_ID + " FROM " + TABLE_DRUG_HISTORY + " ORDER BY " + COLUMN_DRUG_ID + " DESC LIMIT 10)");
-        
         db.close();
     }
 
@@ -217,6 +231,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_DRUG_HISTORY, null, null);
         db.close();
+    }
+
+    // --- User Authentication Methods ---
+    public boolean registerUser(String name, String email, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_USER_NAME, name);
+        values.put(COLUMN_USER_EMAIL, email);
+        values.put(COLUMN_USER_PASSWORD, password);
+        long result = db.insert(TABLE_USERS, null, values);
+        db.close();
+        return result != -1;
+    }
+
+    public boolean authenticateUser(String email, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_USERS, new String[]{COLUMN_USER_ID},
+                COLUMN_USER_EMAIL + "=? AND " + COLUMN_USER_PASSWORD + "=?",
+                new String[]{email, password}, null, null, null);
+        boolean success = cursor.getCount() > 0;
+        cursor.close();
+        db.close();
+        return success;
+    }
+
+    public boolean isEmailExists(String email) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_USERS, new String[]{COLUMN_USER_ID},
+                COLUMN_USER_EMAIL + "=?", new String[]{email}, null, null, null);
+        boolean exists = cursor.getCount() > 0;
+        cursor.close();
+        db.close();
+        return exists;
     }
 
     private long getStartOfDay() {

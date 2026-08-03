@@ -51,6 +51,7 @@
             android:textSize="16sp"
             android:textColor="@color/black" />
         <EditText
+            android:id="@+id/et_register_name"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/capsule_edit_text"
@@ -66,6 +67,7 @@
             android:textSize="16sp"
             android:textColor="@color/black" />
         <EditText
+            android:id="@+id/et_register_email"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/capsule_edit_text"
@@ -81,6 +83,7 @@
             android:textSize="16sp"
             android:textColor="@color/black" />
         <EditText
+            android:id="@+id/et_register_password"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/capsule_edit_text"
@@ -96,6 +99,7 @@
             android:textSize="16sp"
             android:textColor="@color/black" />
         <EditText
+            android:id="@+id/et_register_confirm_password"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/capsule_edit_text"
@@ -104,6 +108,7 @@
             android:layout_marginTop="8dp" />
 
         <CheckBox
+            android:id="@+id/cb_agree_terms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/agree_terms"

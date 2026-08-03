@@ -26,11 +26,16 @@ id btn_pick_time
 id btn_register
 id btn_save_med
 id btn_to_register
+id cb_agree_terms
 id et_dosage
 id et_drug_search
 id et_email
 id et_med_name
 id et_password
+id et_register_confirm_password
+id et_register_email
+id et_register_name
+id et_register_password
 id fab_add_med
 id fragment_container
 id guideline_h50
